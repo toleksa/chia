@@ -9,5 +9,7 @@ fi
 PWD=$(pwd)
 PROJECT=$(dirname "$(readlink -f "$0")" | gawk -F"/" '{ print $NF }')
 
-docker build -t $PROJECT:$TAG .
+#docker build -t $PROJECT:$TAG .
+
+docker build -t docker.io/toleksa/chia:latest .
 
